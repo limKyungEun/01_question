@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title>여행기 작성</title>
+</head>
+<body>
+    <form action="#">
+        
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name">
+            </li>
+            <li>
+                <label for="place">어디로 여행 하셨나요 ?</label>
+                <select name="place" id="place">
+                    <option value="">국내</option>
+                    <option value="">일본</option>
+                    <option value="">동남아</option>
+                    <option value="">중국</option>
+                    <option value="">유럽</option>
+                    <option value="">미주</option>
+                    <option value="">대양주</option>
+                </select>
+            </li>
+            <li>
+                <label for="start_date">여행 시작 날짜</label>
+                <input type="date" id="start_date" name="start_date">
+            </li>
+            <li>
+                <label for="end_date">여행 끝난 날짜</label>
+                <input type="date" id="end_date" name="end_date">
+            </li>
+            <li>
+                <label for="cont">여행기를 작성하세요 !</label>
+                <textarea style="resize:none" name="cont" id="cont" cols="50" rows="10"></textarea>
+            </li>
+            <li>
+                <label for="public">공개 여부</label>
+                <input type="radio" id="public" name="public">공개
+                <input type="radio" id="nopublic" name="public">비공개
+            </li>
+        <P>
+            <button type="submit">등록</button>
+			<button type="reset">초기화</button>
+        </P>
+    </form>
+</body>
+</html>
