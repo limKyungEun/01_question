@@ -215,6 +215,31 @@ header{
     width: 200px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
 }
 
+.shortcut img{
+    float: right;
+    margin-top: 10px;
+    height: 180px;
+    width: 180px;
+}
+
+.sctext{/*바로가기 text영역의 스타일 지정*/
+    float: right;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: rgba(40, 40,40,0.3);
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.sctext:hover{
+    opacity: 0.5;/*불투명도*/
+}
+
 footer{
     float: right;
 }
