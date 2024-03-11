@@ -137,6 +137,49 @@ header{
     width: 300px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
 }
 
+.tab{
+    float: left;
+    width: 300px;
+}
+
+.tab>h4{
+    float: left;
+    height: 30px;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.notice>.tab{/*공지사항 글자영역의 스타일 지정*/
+    width: 280px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.notice ul{
+    float: left;
+    height: 30px;
+    width: 280px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.notice li span{/*notice요소의 후손(하위요소에 해당하는 모든)요소 span에 지정*/
+    float: right;
+}
+
+.notice li:nth-child(2n){/*.notice요소의 후손요소 li요소의 2배수 요소의 스타일 지정*/
+    background-color: #cccccc;
+}
+
+.notice li:hover{
+    font-weight: bold;
+}
+
 .gallery{
     float: left;
     height: 200px;
