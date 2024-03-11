@@ -133,8 +133,9 @@ header{
 
 .notice{
     float: left;
-    height: 200px;
-    width: 300px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
+    height: 190px;
+    width: 280px;
+    margin-top: 10px;
 }
 
 .tab{
@@ -182,8 +183,10 @@ header{
 
 .gallery{
     float: left;
-    height: 200px;
-    width: 300px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
+    height: 190px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .gallery>div{/*.gallery>tab*/
