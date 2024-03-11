@@ -85,11 +85,45 @@ header{
     color: #ffff00;
 }
 
-.imgslide{
+.imgslide{/*이미지와 이미지 위 텍스트 영역*/
     float: right;
     height: 350px;
     width: 800px;/* 왼쪽 메뉴가 들어갈 영역(.top)의 넓이를 200으로 지정했으므로 전체넓이에서 200을 뺀 값으로 지정 */
+    position: relative;/*기준점*/
 }
+
+.imgslide>a{
+    display: block;
+    position: absolute;/*imgslide를 기준으로 삼아 절대 좌표값을 가지게 됨*/
+    left: 0;
+    top: 0;
+}
+
+.imgtext{/*이미지위에 나타날 글자*/
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    margin: -25px 0 0 -150px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40,40,40,0.3);
+    left: 50%;/*컨테이너 시작점을 기준으로 50%의 여백*/
+    top: 50%;/*컨테이너 시작점을 기준으로 50%의 여백*/
+    /*
+        부모요소에 position:relative를 주고
+        자식요소에 position:absolute를 적용한 후
+
+        margin-top : height의 1/2 음수값(-);,
+        margin-left : width의 1/2 음수값(-); ex) margin: -25px 0 0 -150px;
+        left: 50%;
+        top: 50%;
+
+        이 조합으로 준다면 수평, 수직으로 동시에 가운데 정렬을 할 수 있다
+    */
+}
+
 
 .contents{/*공지사항, 갤러리, 바로가기를 묶어주는 영역*/
     float: right;
