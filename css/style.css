@@ -28,7 +28,18 @@ header{
 .top{/* 와이어프레임을 보면 top부분이 왼쪽 전체를 차지하고 있다 */
     float: left;
     height: 650px;/* 와이어프레임에 제시된 각 영역의 높이를 더한 값 */
-    width: 200px;/* 임의 */
+    width: 200px;/* 임의로 지정 */
+}
+
+.logo{
+    float: left;
+    height: 40px;
+    width: 200px;
+    margin: 30px 0;/*로고의 위아래로 여백을 주기위해 지정*/
+}
+
+.menu{
+    float: left;
 }
 
 .imgslide{
@@ -41,6 +52,24 @@ header{
     float: right;
     height: 200px;
     width: 800px;
+}
+
+.notice{
+    float: left;
+    height: 200px;
+    width: 300px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
+}
+
+.gallery{
+    float: left;
+    height: 200px;
+    width: 300px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
+}
+
+.shortcut{
+    float: left;
+    height: 200px;
+    width: 200px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
 }
 
 footer{
