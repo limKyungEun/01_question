@@ -81,3 +81,27 @@ footer{
     height: 100px;
     width: 800px;
 }
+
+.copy{
+    float: left;/*푸터영역의 왼쪽*/
+    height: 100px;
+    width: 600px;
+}
+
+.site{
+    float: right;/*푸터영역의 오른쪽*/
+    height: 100px;
+    width: 200px;
+}
+
+.sns{
+    float: right;
+    height: 50px;/*.site는 두 행으로 구분되므로 100/2 해서 지정*/
+    width: 200px;
+}
+
+.familysite{
+    float: right;
+    height: 50px;/*.site는 두 행으로 구분되므로 100/2 해서 지정*/
+    width: 200px;
+}
