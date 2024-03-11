@@ -19,3 +19,36 @@ a{
     display: block;/* 박스요소를 block속성으로 표하며 요소 앞뒤로 줄바꿈 되도록함 한 줄 전체(너비100%)를 차지하게 함 */
     /* a태그와 img태그는 기본이 인라인요소이다 */
 }
+
+header{
+    float: left;/* 박스요소이기 때문에 각각 다른줄?한줄?에 나타나게됨 이것을 해결하기 위해
+     플롯레프트 속성을 사용하여 박스요소를 왼쪽으로 띄어서 배치한다 */
+}
+
+.top{/* 와이어프레임을 보면 top부분이 왼쪽 전체를 차지하고 있다 */
+    float: left;
+    height: 650px;/* 와이어프레임에 제시된 각 영역의 높이를 더한 값 */
+    width: 200px;/* 임의 */
+}
+
+.imgslide{
+    float: right;
+    height: 350px;
+    width: 800px;/* 왼쪽 메뉴가 들어갈 영역(.top)의 넓이를 200으로 지정했으므로 전체넓이에서 200을 뺀 값으로 지정 */
+}
+
+.contents{/*공지사항, 갤러리, 바로가기를 묶어주는 영역*/
+    float: right;
+    height: 200px;
+    width: 800px;
+}
+
+footer{
+    float: right;
+}
+
+.bottom{
+    float: left;/*푸터영역내에서 .copy, .site, .familsite 영역이 왼쪽부터 배치되도록 지정*/
+    height: 100px;
+    width: 800px;
+}
