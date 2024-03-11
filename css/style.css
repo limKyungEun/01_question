@@ -64,6 +64,27 @@ header{
     color: #ffff00;
 }
 
+.submenu{
+    float: left;
+    width: 100%;
+    display: none;/*서브메뉴가 나타나지 않게 지정*/
+}
+
+.submenu>li>a{
+    height: 40px;
+    width: 180px;
+    line-height: 40opx;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #ffffff;
+}
+
+.submenu>li>a:hover{
+    background-color: #999999;
+    color: #ffff00;
+}
+
 .imgslide{
     float: right;
     height: 350px;
