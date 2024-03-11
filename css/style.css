@@ -39,7 +39,29 @@ header{
 }
 
 .menu{
+    width: 180px;
+    top: 100px;/*메뉴가 위로부터 100px떨어져 나가게 함 ??? 사실 뭔지 잘 모르겟음 margin-top인가*/
+    text-align: center;/*text 가운데정렬*/
+}
+
+.navi>li{
     float: left;
+    width: 180px;
+}
+
+.navi>li>a{
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #222328;
+    color: #ffffff;
+}
+
+.navi>li>a:hover{
+    background-color: #930930;
+    color: #ffff00;
 }
 
 .imgslide{
