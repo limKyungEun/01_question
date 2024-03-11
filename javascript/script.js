@@ -23,11 +23,11 @@ jQuery(document).ready(function(){
 
 
     //팝업기능
-    $('.notice li:first').click(function(){
-        $('#modal').addClass('active');
+    $('.notice li:first').click(function(){//notice요소의 후손 요소중에서 첫 번째 요소 클릭
+        $('#modal').addClass("active");//#modal과 일치하는 요소에 'active'클래스 추가
     });
-    $('.btn').click(function(){
-        $('#model').removeClass('active');
+    $('.btn').click(function(){//.btn요소 클릭
+        $('#modal').removeClass("active");//#modal의 'active'클래스 삭제
     })
 });
 

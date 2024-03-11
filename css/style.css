@@ -248,11 +248,50 @@ header{
     top: 0;
     background: rgba(0,0,0,0.6);
     z-index: 1;
-    display: none;
+    display: none;/*처음엔 나타나지 않도록 d:n처리*/
 }
 
-#modal.active{
+#modal.active{/*#modal에 active 클래스가 추가되면 나타냄*/
     display: block;
+}
+
+.modal_up{/*모달레이어가 팝업될때 나타나는 영역*/
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    background-color: #ffffff;
+}
+
+.uptitle{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.btn{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;/*해당 태그 위에 위치하는 마우스 커서의 모양을 변경*/
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-right: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 footer{
