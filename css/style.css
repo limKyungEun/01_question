@@ -302,12 +302,16 @@ footer{
     float: left;/*푸터영역내에서 .copy, .site, .familsite 영역이 왼쪽부터 배치되도록 지정*/
     height: 100px;
     width: 800px;
+    background-color: #ababab;
 }
 
 .copy{
     float: left;/*푸터영역의 왼쪽*/
     height: 100px;
     width: 600px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 100px;
 }
 
 .site{
@@ -322,8 +326,33 @@ footer{
     width: 200px;
 }
 
+.sns ul{
+    text-align: center;
+}
+
+.sns ul li{
+    display: inline-block;/*하단 sns가 한줄에 표시되도록 inline과 block의 속성을 같이 가지고 있도록 변경*/
+}
+
+.sns img{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+
+.sns img:hover{
+    opacity: 0.5;
+}
 .familysite{
     float: right;
     height: 50px;/*.site는 두 행으로 구분되므로 100/2 해서 지정*/
     width: 200px;
+}
+
+.familysite select{
+    float: right;
+    height: 30px;
+    width: 180px;
+    margin: 10px 10px 0 0;
+    font-size: 14px;
 }
