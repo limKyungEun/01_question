@@ -186,6 +186,26 @@ header{
     width: 300px;/* 정해진 값이 없으므로 임의로 800/3 해서 지정 */
 }
 
+.gallery>div{/*.gallery>tab*/
+    width: 280px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.gallery ul li{/*이미지 간격사이에 padding:10px,mt:10px 여백설정*/
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.gallery img{/*각각 이미지에 크기 설정*/
+    height: 90px;
+    width: 75px;
+}
+
+.gallery li:hover{
+    opacity: 0.5;/*마우스를 올리면 불투명도 50%로 나타나도록 설정*/
+}
+
 .shortcut{
     float: left;
     height: 200px;
